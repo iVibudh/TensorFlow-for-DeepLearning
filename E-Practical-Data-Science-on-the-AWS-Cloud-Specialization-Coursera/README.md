@@ -6,7 +6,7 @@ Idea To production
 - DeelPearning>AI
 
 
-![2.overview.JPG](https://github.com/iVibudh/TensorFlow-for-DeepLearning/blob/main/E-Practical-Data-Science-on-the-AWS-Cloud-Specialization-Coursera/01-Analyze-Datasets-and-Train-ML-Models-using-AutoML/Images/1.overview.JPG)
+![2.overview.JPG](https://github.com/iVibudh/TensorFlow-for-DeepLearning/blob/main/E-Practical-Data-Science-on-the-AWS-Cloud-Specialization-Coursera/01-Analyze-Datasets-and-Train-ML-Models-using-AutoML/Images/2.overview.JPG)
 
 ### 1. Analyze Datasets and Train ML Models using AutoML
 - Data Science in the cloud (the easy way)
@@ -37,4 +37,4 @@ Idea To production
 - Fundamentals of AWS and Cloud Computing - 
 AWS Cloud Technical Essentials 
 
-![3.overview.JPG](https://github.com/iVibudh/TensorFlow-for-DeepLearning/blob/main/E-Practical-Data-Science-on-the-AWS-Cloud-Specialization-Coursera/01-Analyze-Datasets-and-Train-ML-Models-using-AutoML/Images/1.overview.JPG)
+![3.overview.JPG](https://github.com/iVibudh/TensorFlow-for-DeepLearning/blob/main/E-Practical-Data-Science-on-the-AWS-Cloud-Specialization-Coursera/01-Analyze-Datasets-and-Train-ML-Models-using-AutoML/Images/3.overview.JPG)
