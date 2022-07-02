@@ -8,3 +8,5 @@
 - Pandas
 - Numpy 
 
+### Assignment 
+- Register and visualize dataset

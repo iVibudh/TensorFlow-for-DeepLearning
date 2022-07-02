@@ -20,3 +20,6 @@ If you wish to dive more deeply into the topics covered this week, feel free to 
 
 - [SHAP](https://shap.readthedocs.io/en/latest/)
 
+
+### Assignmnet 
+- Detect data bias with Amazon SageMaker Clarify

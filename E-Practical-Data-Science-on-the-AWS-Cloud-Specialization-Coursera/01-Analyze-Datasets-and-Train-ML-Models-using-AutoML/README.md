@@ -26,3 +26,7 @@
 
 - Feature Importance
     - [SHAP](https://shap.readthedocs.io/en/latest/)
+
+### Week-3: Use-Automated-Machine-Learning-to-train-a-Text-Classifier
+
+### Week-4: Built-in-Algorithms
