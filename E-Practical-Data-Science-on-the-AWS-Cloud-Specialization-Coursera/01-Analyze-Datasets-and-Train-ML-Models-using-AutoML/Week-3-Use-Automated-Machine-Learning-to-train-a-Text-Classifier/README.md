@@ -17,4 +17,13 @@
 ### Additional reading material
 [Amazon SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)
 
-### Assignmnet 
+### Lab
+You will train a text classification model using Amazon SageMaker Autopilot. The lab will include the following sections:
+- Dataset review
+- Configure the Autopilot job
+- Launch Autopilot job
+- Track Autopilot job progress
+- Feature engineering
+- Model training and tuning
+- Review all output
+- Deploy and test best candidate model
