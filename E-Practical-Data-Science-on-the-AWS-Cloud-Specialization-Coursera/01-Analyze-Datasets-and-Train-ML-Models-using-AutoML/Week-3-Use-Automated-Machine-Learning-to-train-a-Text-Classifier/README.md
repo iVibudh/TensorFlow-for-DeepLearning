@@ -15,7 +15,8 @@
     - using a Sagemaker managed endpoint
 
 ### Additional reading material
-[Amazon SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)
+- [Amazon SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)
+- [Amazon Science Publication](https://www.amazon.science/publications/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale)
 
 ### Lab
 You will train a text classification model using Amazon SageMaker Autopilot. The lab will include the following sections:
