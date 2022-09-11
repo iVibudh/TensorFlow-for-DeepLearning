@@ -30,3 +30,34 @@
 ### Week-3: Use-Automated-Machine-Learning-to-train-a-Text-Classifier
 
 ### Week-4: Built-in-Algorithms
+
+## Course 1 Optional Resources
+
+#### Week 1 Explore the Use Case and Analyze the Dataset:
+- AWS Data Wrangler
+- AWS Glue 
+- Amazon Athena 
+- Matplotlib 
+- Seaborn 
+- Pandas
+- Numpy 
+
+#### Week 2 Data Bias and Feature Importance:
+- Measure Pretraining Bias - Amazon SageMaker
+- SHAP
+
+#### Week 3 Automated Machine Learning:
+- Amazon SageMaker Autopilot
+
+#### Week 4 Built-in algorithms:
+- Elastic Machine Learning Algorithms in Amazon SageMaker
+- Word2Vec algorithm
+- GloVe algorithm 
+- FastText algorithm 
+- Transformer architecture, "Attention Is All You Need" 
+- BlazingText algorithm
+- ELMo algorithm 
+- GPT model architecture 
+- BERT model architecture 
+- Built-in algorithms
+- Amazon SageMaker BlazingText 
