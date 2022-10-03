@@ -27,3 +27,5 @@ Optional references:
 ### Week 3: Deploy End-to-End Machine Learning Pipeline
 - Machine learning Pipelines
 - Machine Learning Pipelines with azure SageMaker
+
+- [A Chat with Andrew on MLOps: From Model-centric to Data-centric AI](https://www.youtube.com/watch?v=06-AZXmwHjo)
