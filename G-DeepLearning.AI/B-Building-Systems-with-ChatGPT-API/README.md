@@ -55,6 +55,15 @@ evaluate what type of querry is it - complaint, product inquiry,
  - Prompt injections (usage of prompts to detect prompt injections)
  
 ## 5. Chain of Thought Reasoning 
+- Usually, this chain of thought reasoning often gives more useful and better results as model can reason in detail before answering a specific question.
+
+- If we can reframe the query to ask a series of relevant steps before the model provides it's final answer, the model think longer and more methodically about the problem.
+
+- **Inner Monologue**
+    - provide the instruction about following the **reasoning steps as a system message**
+    - the reasoning sections are asked to be presented in a structured format
+    - this allows the developer to parse out the irrelevant sections of the model response (in this case, reasoning)
+
 ## 6. Chaining Prompts
 ## 7. Check Outputs 
 ## 8. Evaluation 
