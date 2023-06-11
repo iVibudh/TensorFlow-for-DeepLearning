@@ -8,11 +8,11 @@ The topics covered in the lectures are as follows:
 - Classification (Evaluate Inputs)
 - Moderation 
 - Chain of Thought Reasoning 
-- Chaining Prompts
-- Check Outputs 
-- Evaluation 
-- Evaluation Part 1
-- Evaluation Part 2
+- Chaining Prompts (19)
+- Check Outputs (6)
+- Evaluation (5)
+- Evaluation Part 1 (19)
+- Evaluation Part 2 (9)
 - Summary 
 
 ## 1. Introduction 
@@ -65,6 +65,20 @@ evaluate what type of querry is it - complaint, product inquiry,
     - this allows the developer to parse out the irrelevant sections of the model response (in this case, reasoning)
 
 ## 6. Chaining Prompts
+- It is more tedious to break a large complex prompt into a chain of simpler prompts. However, chaining propts usually help us in getting the correect reasoning at each step.
+- An example of a Chatbot which can give information on products is given in the notebook. We can build on top of the instructions to help it to make it do more tasks.
+
+
+Why use chain prompting?
+- More focused (breaks down a complex task)
+- Context Limitations (Max tokens for input and output response)
+- Reduced Costs (pay per token) dynamically allowing relevant information to be taken in
+
+
+There are more advanced ways to retrieve contextual information 
+- Text embeddings (allows you to retrieve relevant information more effectively)
+    - it enables fuzzy or semantics search which allows us to retrive information more effectively, without using the exact keywords. 
+    
 ## 7. Check Outputs 
 ## 8. Evaluation 
 ## 9. Evaluation Part 1
