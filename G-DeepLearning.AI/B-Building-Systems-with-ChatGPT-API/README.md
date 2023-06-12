@@ -98,7 +98,7 @@ This puts together the chain of prompts that you saw throughout the course. We w
 - Step 6: Model evaluated the response.
 - Step 7: Model approved the response.
 
-## 9. Evaluation Part 1 (with a single "right answer")
+## 9. Evaluation Part 1 (there is a single "right answer")
 - Some best practices to evaluate the output of an LLM.
 - How does it feel to build such a system? How is it different from a traditional supervised Machine Learning workflow?
 
@@ -120,5 +120,45 @@ This puts together the chain of prompts that you saw throughout the course. We w
     
 When you are building high stakes applications, where there is risk of bias or an inappropriate output causing harm to someone, they as developers we have the responsibility to collect the test set. We need to rigourously evaluate the performance of the system to make sure that it is doing the right thing.
 
-## 10. Evaluation Part 2
+## 10. Evaluation Part 2 (there isn't a single "right answer.")
+
+# L10: Evaluation Part II
+
+Evaluate LLM responses where there isn't a single "right answer."
+
+In cases when there isn't a single "right answer", there are 2 ways by which you can evaluate the performance of the model:
+- **Evaluation Framework 1:** You can define a rubric, where you assess the performance of a model. Here is a sample rubric:
+    - Is the Assistant response based only on the context provided? (Y or N)
+    - Does the answer include information that is not provided in the context? (Y or N)
+    - Is there any disagreement between the response and the context? (Y or N)
+    - Count how many questions the user asked. (output a number)
+    - For each question that the user asked, is there a corresponding answer to it?
+    - Of the number of questions asked, how many of these questions were addressed by the answer? (output a number)
+    
+**Note:** It might be useful to deploy a cheaper model (eg. ChatGPT-3.5-Turbo) and use a more advanced and expensive model (eg. ChatGPT-4) for the evaluation.
+
+- **Evaluation Framework 2:** Evaluate the LLM's answer to the user based on an "ideal" / "expert" response. It will be unreasonable for any LLM to generate this exact "ideal answer word by word. However, we can use one of the 2 approaches:
+    1. Calculate the similarity of the LLM response with the "ideal" response. You can use BLEU score (BiLingual Evaluation Understudy) for this task. 
+    2. **(Best Way)** You can use a propmt to ask the LLM, to compare how well the automated generated response compare to the "ideal" response. You can use the **OpenAI's open scource eval framework** ([OpenAI evals](https://github.com/openai/evals/blob/main/evals/registry/modelgraded/fact.yaml)). 
+    The submitted answer may either be a subset or superset of the expert answer, or it may conflict with it. Determine which case applies. Answer the question by selecting one of the following options:
+        - **(Best Case)** (A) The submitted answer is a subset of the expert answer and is fully consistent with it. 
+        - **(Maybe some hallucination)** (B) The submitted answer is a superset of the expert answer and is fully consistent with it. 
+        - **(Good enough)** (C) The submitted answer contains all the same details as the expert answer. 
+        - **(Worst case)** (D) There is a disagreement between the submitted answer and the expert answer. 
+        - **(Good enough)** (E) The answers differ, but these differences don't matter from the perspective of factuality. <br>
+  choice_strings: ABCDE
+
 ## 11. Summary 
+- Details of how an LLM works. 
+- Details covered - tokenizer, reverse a string
+- Methods to evaluate the user input to ensure quality and safety of the system 
+- Processing inputs using 
+    - chain of though reasoning 
+    - splitting tasks into sub tasks with chain prompts
+- Checking outputs before showing them to the user. 
+- Methods to evaluate the system over time to monitor and improve its performance
+- Building responsibly with these tools, ensuring that the model is safe and provides appropriate responses that are accurate, relevant and in the tone that you want. 
+
+
+
+
