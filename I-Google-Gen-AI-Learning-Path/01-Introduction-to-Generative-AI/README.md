@@ -3,7 +3,7 @@
 This is an introductory level microlearning course aimed at explaining what Generative AI is, how it is used, and how it differs from traditional machine learning methods. It also covers Google Tools to help you develop your own Gen AI application. 
 
 
-### All Readings: Introduction to Generative AI (G-GENAI-I)
+# All Readings: Introduction to Generative AI (G-GENAI-I)
 Here are the assembled readings on generative AI:
 - [Ask a Techspert: What is generative AI?](https://blog.google/inside-google/googlers/ask-a-techspert/what-is-generative-ai/)
 - [Build new generative AI powered search & conversational experiences with Gen App Builder:](https://cloud.google.com/blog/products/ai-machine-learning/create-generative-apps-inminutes-with-gen-app-builder)
@@ -19,8 +19,7 @@ Here are the assembled readings on generative AI:
 
 Here are the assembled readings on large language models:
 - [NLP's ImageNet moment has arrived: ](https://thegradient.pub/nlp-imagenet/)
-- [Google Cloud supercharges NLP with large language models:]
-(https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-supercharges-nlp-with-large-language-models)
+- [Google Cloud supercharges NLP with large language models:](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-supercharges-nlp-with-large-language-models)
 - [LaMDA: our breakthrough conversation technology:](https://blog.google/technology/ai/lamda/)
 - [Language Models are Few-Shot Learners:](https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64aPaper.pdf)
 - [PaLM-E: An embodied multimodal language model:](https://ai.googleblog.com/2023/03/palm-e-embodied-multimodal-language.html)
