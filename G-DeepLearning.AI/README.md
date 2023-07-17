@@ -47,4 +47,32 @@ Scaffolding technique in general
 
 <hr />
 
-## Demo - 
+## Demo - API Interaction
+
+### H. Uses web APIs 
+-  Switch from "Demo" to "Local"
+    - "Demo" can use internet data 
+    - "Local" will be using internal company data
+- Example API 
+    - developer.snpglobal.com/commodityinsights/servicecatalogue...
+    - S&P Global Platts: World Refinery Database
+- deatils of the API
+    - there are these "odata" endpoints
+    - there are all these different types of metadata 
+        - API documentation 
+        - syntax of how to use these API
+        - details about the input variables - state, city, operator, refinery, etc. 
+- Expose the documentation of the API to the model and create an LLM that directly calls the API. It is running the querry internally. 
+- The LLM model uses the documentation to construct a queqy for the "Odata" querry 
+- Example question: Yesterdays's outages in the data refinary?
+    - Use python to get today's date 
+    - subtract it by 1 and convert to string 
+    - construct a odatabase query to create an API call 
+    - Runs the python code to gets result 
+    - Use Natural Language to answer in a human form
+
+- Reasoning about a snap of time. "In the last year", "In the year so far", etc. 
+
+- Ability needed:
+    - Write and execute Python code 
+    - interact with the data pulled 
