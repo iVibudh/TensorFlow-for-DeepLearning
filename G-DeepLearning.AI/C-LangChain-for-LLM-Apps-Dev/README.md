@@ -48,11 +48,13 @@ The topics covered in the lectures are as follows:
 ## 2. Models, Prompts and parsers
 - Direct API calls to OpenAI
 - API calls through LangChain:
+    - Models: the LLM model
     - Prompts
-    - Models
-    - Output parsers
+    - Output parsers: takes the output and parses it into a more structured format
 
 ## 3. Memory
+
+
 ## 4. Chains
 ## 5. Question and Answer
 ## 6. Evaluation
