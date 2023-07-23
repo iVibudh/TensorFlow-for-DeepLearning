@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  metadata_app:
+    build: .
+    image: metastapp:latest
+    container_name: unruffled_tu2
+    ports:
+      - "8502:8502"
+
+    tty: true
