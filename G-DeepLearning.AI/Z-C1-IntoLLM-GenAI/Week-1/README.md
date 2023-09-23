@@ -39,13 +39,15 @@ Generating Text - **Decoder** role in translation (seq-to-seq)
 <br> <br> <br>
 - Encoder only models: (seq to seq) less common
     -  the input sequence and the output sequence or the same length
-    - add additional layers to the architecture, you can train encoder-only models to perform classification tasks. eg BERT
+    - add additional layers to the architecture, you can train encoder-only models to perform classification tasks. eg BERT, RoBERTA
+    - Encoder-only models are also known as Autoencoding models, and they are pre-trained using masked language modeling. Here, tokens in the input sequence or randomly mask, and the training objective is to predict the mask tokens in order to reconstruct the original sentence. This is also called a denoising objective.
 - Encoder-Decoder model: (seq to seq)
     - the input sequence and the output sequence can be of different lengths
-    - You can also scale and train this type of model to perform general text generation tasks. eg. BART 
+    - You can also scale and train this type of model to perform general text generation tasks. eg. BART
 - Decoder only: (seq to seq)) most popular
     - the input sequence and the output sequence can be of different lengths.
-    - Popular decoder-only models include the GPT family of models, BLOOM, Jurassic, LLaMA, and many more.
+    - Popular decoder-only models include the GPT family of models, GPT, BLOOM, Jurassic, LLaMA, and many more.
+    - Decoder-based autoregressive models, mask the input sequence and can only see the input tokens leading up to the token in question. The model has no knowledge of the end of the sentence. The model then iterates over the input sequence one by one to predict the following token. In contrast to the encoder architecture, this means that the context is unidirectional. By learning to predict the next token from a vast number of examples, the model builds up a statistical representation of language. Models of this type make use of the decoder component off the original architecture without the encoder. Decoder-only models are often used for text generation, although larger decoder-only models show strong zero-shot inference abilities, and can often perform a range of tasks well. 
 
 <br> <br> <br>
 
@@ -64,5 +66,28 @@ Random sampling introduces variability, reducing the likelihood of word repetiti
 - Higher temperature values increase randomness, while lower values concentrate probability on likely words, resulting in less randomness.
 - Default temperature value of one maintains unaltered probability distribution for text generation.
 
+<br> <br> <br>
+
+## References
+**Transformer Architecture**
+- [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)
+- [BLOOM: BigScience 176B Model](https://arxiv.org/abs/2211.05100)
+- Coursera's [Vector Space Models](https://www.coursera.org/learn/classification-vector-spaces-in-nlp/home/week/3)
+
+**Pre-training and scaling laws**
+- [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)
+
+**Model architectures and pre-training objectives**
+- [What Language Model Architecture and Pretraining Objective Work Best for Zero-Shot Generalization?](https://arxiv.org/pdf/2204.05832.pdf) The paper examines modeling choices in large pre-trained language models and identifies the optimal approach for zero-shot generalization.
+- [HuggingFace Tasks](https://huggingface.co/tasks) and [Model Hub](https://huggingface.co/models): Collection of resources to tackle varying machine learning tasks using the HuggingFace library.
+- [LLaMA: Open and Efficient Foundation Language Models] (https://arxiv.org/pdf/2302.13971.pdf) Article from Meta AI proposing Efficient LLMs (their model with 13B parameters outperform GPT3 with 175B parameters on most benchmarks)
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288)
+
+**Scaling laws and compute-optimal models**
+- [Language Models are Few-Shot Learners](https://arxiv.org/pdf/2005.14165.pdf) - This paper investigates the potential of few-shot learning in Large Language Models.
+
+- [Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf) - Study from DeepMind to evaluate the optimal model size and number of tokens for training LLMs. Also known as “Chinchilla Paper”.
+
+- [BloombergGPT: A Large Language Model for Finance](https://arxiv.org/pdf/2303.17564.pdf) - LLM trained specifically for the finance domain, a good example that tried to follow chinchilla laws.
 
 
