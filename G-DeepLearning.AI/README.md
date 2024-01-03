@@ -79,9 +79,3 @@ Scaffolding technique in general
 
 <hr />
 
-
-## Best Monitors for your workstation:
-1. [ViewSonic VA3209M 32 Inch IPS Full HD 1080p Monitor with Frameless Design, 75 Hz, Dual Speakers, HDMI, and VGA Inputs for Home and Office](https://amzn.to/449E6i1) $210 but no reviews strange? 
-2. [SAMSUNG 32-inch M5 Smart Monitor with Mobile Connectivity, FHD, Remote Access, Office 365 (LS32AM500NNXZA), Black (Renewed)](https://www.amazon.ca/gp/product/B08RCLHKN5?smid=A30HNTWRKP3TVT&th=1&linkCode=ll1&tag=thoughtfulpic-20&linkId=92af2acfd2928a48ef1c61cd66be87c8&language=en_CA&ref_=as_li_ss_tl) $285 - most expensive on the list
-3. [Acer 32" 1080P 1920 X1080 @60Hz, 4ms, IPS HDMI, EB321HQ Awi](https://www.amazon.ca/gp/product/B0797M3SVG?smid=A3DWYIK6Y9EEQB&th=1&linkCode=ll1&tag=thoughtfulpic-20&linkId=711f0d2ce48f669e315bcc02968dded2&language=en_CA&ref_=as_li_ss_tl) $210 cheapest on the list but monitor not adjustable.
-4. Alternate to no. 1 [ViewSonic 32 Inch 1080p Widescreen IPS Monitor with Ultra-Thin Bezels, Screen Split Capability HDMI and DisplayPort (VX3276-MHD)](https://www.amazon.ca/gp/product/B0787WGCXT?smid=A3DWYIK6Y9EEQB&th=1&linkCode=ll1&tag=thoughtfulpic-20&linkId=d3a48df8c97c289d99ae136291814824&language=en_CA&ref_=as_li_ss_tl)
