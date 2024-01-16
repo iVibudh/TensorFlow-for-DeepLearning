@@ -7,6 +7,7 @@
 |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     __/ |
                    |___/ 
+```
 
 # Hangman Game
 
@@ -20,7 +21,7 @@ Make sure you have Python installed on your system.
 
 ### Run the code
 
-```python main.py 
+```python main.py ```
 
 
 ```  +---+
@@ -29,4 +30,4 @@ Make sure you have Python installed on your system.
  /|\  |
  / \  |
       |
-=========
+=========```
