@@ -40,13 +40,16 @@ Welcome to the repository where you can find various resources and structured le
 - Official Google AI resources
 - Comprehensive Q&A section for learners
 
-### J. Langchain
-- Integrating language models with blockchain technology
-- New paradigms in decentralized AI
-
 ### K. Labs and Collaborations
 - Interactive Jupyter notebooks
 - Collaborations using Google Colab
+
+### L. Langchain
+- Integrating language models with blockchain technology
+- New paradigms in decentralized AI
+
+### M. 100 days of Python
+- Projects based in Python
 
 ## Author
 
