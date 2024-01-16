@@ -2,7 +2,7 @@
 
 
 # 100 Days of Code: Complete Professional Python Bootcamp
-## Beginner Python
+## Beginner Python Topics
 - Variables in Python
 - String Manipulation, Input and Print Functions
 - Variable Naming Rules
@@ -22,8 +22,8 @@
 
 
 ## Beginner Projects
-- Day007 - Hangman
-- 
+- Day007-Hangman
+- Day008-CaesarCipher
 
 ## Intermediate Python
 - Python Object Oriented Programming
