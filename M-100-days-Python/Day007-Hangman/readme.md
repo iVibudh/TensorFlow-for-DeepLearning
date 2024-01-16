@@ -1,5 +1,6 @@
 
-``` _
+``` 
+ _
 | |
 | |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
 | '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
@@ -24,7 +25,8 @@ Make sure you have Python installed on your system.
 ```python main.py ```
 
 
-```  +---+
+```  
++---+
   |   |
   O   |
  /|\  |
