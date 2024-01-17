@@ -20,14 +20,6 @@
 - Local Development Environment Setup
 - PyCharm Tips and Tricks
 
-
-## Beginner Projects
-- Day007-Hangman
-- Day008-CaesarCipher
-- Day009-SecretAuction
-- Day010-Leap_Calculator
-- Day011-Blackjack
-
 ## Intermediate Python
 - Python Object Oriented Programming
 - Creating Classes, Using External Modules
@@ -70,6 +62,16 @@
 - Custom API Driven Website, Online Shop
 - Analyse and Visualise Data
 - Predict Earnings using Multivariable Regression
+
+
+# Projects 
+
+## Beginner Projects
+- Day007-Hangman
+- Day008-CaesarCipher
+- Day009-SecretAuction
+- Day010-Leap_Calculator
+- Day011-Blackjack
 
 ## Professional Portfolio Building
 - Independent Assignments
