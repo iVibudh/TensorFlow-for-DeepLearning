@@ -24,6 +24,9 @@
 ## Beginner Projects
 - Day007-Hangman
 - Day008-CaesarCipher
+- Day009-SecretAuction
+- Day010-Leap_Calculator
+- Day011-Blackjack
 
 ## Intermediate Python
 - Python Object Oriented Programming
