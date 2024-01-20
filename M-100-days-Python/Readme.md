@@ -71,6 +71,10 @@
 - Day009-SecretAuction
 - Day010-Leap_Calculator
 - Day011-Blackjack
+- Day012-Number_guessing_game
+- Day013-Debugging_FizzBuzz
+- Day014-Higher_Lower_Game
+
 
 ## Professional Portfolio Building
 - Independent Assignments
