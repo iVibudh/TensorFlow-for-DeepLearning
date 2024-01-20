@@ -15,4 +15,4 @@ To play the game, follow these steps:
 - The game continues until an incorrect guess is made, and the final score is displayed.
 
 ## Note on Game Logic
-- The game picks 'A' and 'B' from a predefined list of dictionary objects. These are just celebraties - the data for these celebrities is not reliable and the number of followers is just an estimate, might not be an actual representation.
+The game picks 'A' and 'B' from a predefined list of dictionary objects. These are just celebraties - the data for these celebrities is not reliable and the number of followers is just an estimate, might not be an actual representation.
