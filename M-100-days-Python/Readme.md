@@ -78,3 +78,8 @@
 
 ## Professional Portfolio Building
 - Independent Assignments
+
+
+## Useful Website resources
+- [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) shows how the value is being updated at each run
+- [Text to ASCII art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) generates ASCII art for endlish text
