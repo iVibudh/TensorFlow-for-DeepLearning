@@ -69,3 +69,9 @@ This project is licensed under the [MIT liscense] - see the [LICENSE](LICENSE) f
 
 - Thanks to all the content creators and educators whose resources are listed here.
 - Special mention to the AI and data science community for their continual support and inspiration.
+
+
+## Start Tabby copilot:
+Docker command on Windows:
+
+```docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda```
