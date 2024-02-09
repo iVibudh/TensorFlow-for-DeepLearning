@@ -74,4 +74,11 @@ This project is licensed under the [MIT liscense] - see the [LICENSE](LICENSE) f
 ## Start Tabby copilot:
 Docker command on Windows:
 
-```docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda```
+For 8099 port
+
+```docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda'''
+
+For 8080 port:
+```docker run -it --gpus all -p 8080:8080 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda```
+Ngrok link
+```ngrok http --domain=beetle-whole-luckily.ngrok-free.app 8080 ```
