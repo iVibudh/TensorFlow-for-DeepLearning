@@ -2,7 +2,7 @@
 
 Welcome to the repository where you can find various resources and structured learning paths for artificial intelligence, deep learning, data science, and machine learning.
 
-## Courses
+# Courses
 
 ### A. TensorFlow Deep Learning
 - Introduction to TensorFlow for Deep Learning with Udacity
@@ -71,14 +71,22 @@ This project is licensed under the [MIT liscense] - see the [LICENSE](LICENSE) f
 - Special mention to the AI and data science community for their continual support and inspiration.
 
 
-## Start Tabby copilot:
-Docker command on Windows:
+<hr>
 
-For 8099 port
+# Start Tabby copilot:
 
-```docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda'''
+- Open Powershell
+- > cd D:\tabbyml\temp\.tabby\models\TabbyML
+- > docker run -it --gpus all -p 8080:8080 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
 
-For 8080 port:
-```docker run -it --gpus all -p 8080:8080 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda```
-Ngrok link
-```ngrok http --domain=beetle-whole-luckily.ngrok-free.app 8080 ```
+<br>
+For 8099 port: 
+
+- > docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
+<br>
+
+(Optional - for other local devices) Ngrok link:
+
+- > ngrok http --domain=beetle-whole-luckily.ngrok-free.app 8080
+
+
