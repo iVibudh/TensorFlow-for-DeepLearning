@@ -90,3 +90,6 @@ For 8099 port:
 - > ngrok http --domain=beetle-whole-luckily.ngrok-free.app 8080
 
 
+**References**
+[yt TUTORIAL](https://www.youtube.com/watch?v=r5FmNT32BK8&t=568s)
+[Tabby Website](https://tabby.tabbyml.com/docs/getting-started)
