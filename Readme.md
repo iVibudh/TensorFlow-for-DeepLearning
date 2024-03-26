@@ -76,13 +76,13 @@ This project is licensed under the [MIT liscense] - see the [LICENSE](LICENSE) f
 # Start Tabby copilot:
 
 - Open Powershell
-- > cd D:\tabbyml\temp\.tabby\models\TabbyML
-- > docker run -it --gpus all -p 8080:8080 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
+- > cd D:\tabbyml\temp\.tabby\models\TabbyML (not needed)
+- > docker run -it --gpus all -p 8080:8080 -v D:\tabbyml\temp\\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
 
 <br>
 For 8099 port: 
 
-- > docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
+- > docker run -it --gpus all -p 8099:8099 -v D:\tabbyml\temp\\.tabby:/data tabbyml/tabby serve --model TabbyML/StarCoder-7B --device cuda
 <br>
 
 (Optional - for other local devices) Ngrok link:
