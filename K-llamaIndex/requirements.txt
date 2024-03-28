@@ -1,5 +1,0 @@
-llama_index>=0.7.7
-transformers
-torch
-sentence_transformers
-InstructorEmbedding
