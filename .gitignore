@@ -8,6 +8,7 @@ __pycache__/
 
 # Databases
 *.db
+storage/
 
 # Distribution / packaging
 .Python
