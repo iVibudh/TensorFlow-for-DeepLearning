@@ -1,4 +1,4 @@
-# Getting started with Mistral
+# Functions, Tools, and Agents with LangChain
 
 These notes are from the DeepLearning.ai course on [Getting started with Mistral](https://learn.deeplearning.ai/courses/getting-started-with-mistral/lesson/1/introduction)
 
