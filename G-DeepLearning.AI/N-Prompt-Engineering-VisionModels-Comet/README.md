@@ -1,123 +1,66 @@
-# Functions, Tools, and Agents with LangChain
+# Prompt Engineering for Vision Models
 
-These notes are from the DeepLearning.ai course on [Getting started with Mistral](https://learn.deeplearning.ai/courses/getting-started-with-mistral/lesson/1/introduction)
+These notes are from the DeepLearning.ai course on [Prompt Engineering for Vision Models](https://learn.deeplearning.ai/courses/prompt-engineering-for-vision-models/lesson/1/introduction)
 
 The topics covered in the lectures are as follows:
 1. Introduction 
 2. Overview
-3. Prompting
-4. Model Selection
-5. Function calling 
-6. RAG from scratch 
-7. Chatbot
-8. Conclusion
+3. Image Segmentation
+4. Object Detection
+5. Image Generation 
+6. Fine-Tuning
+7. Conclusion
+8. Appendix
 
 
-## 1. Introduction 
-- Mixtral 8X7B - misture of expert - 8 feed forward neural networks
-- At inference, a gating neural network chooses to activate 2 out of the 8 experts to predict the next token
-- It then takes a weighted average of these 2 experts to generate the next token 
-- Low inference cost 
-- Total Parameters 46.7B parameters, at inference it  uses only 12.9B parameters
-- Key Features covered - function calling and JSON mode
-- Open Scource Models - Mistral 7B, Mixtral 8X7B
-- Commercial Modles: Mistral Small, Mistral Medium, Mistral Large
+- Prompt engineering for vision models can be used to caption images, segment objects, or generate images.
+    - In this course, you will learn how to prompt a segmentation model called Sam to identify the outline of an object in an image.
+    - You can also prompt the model by marking a few points in the image or specifying a boundary box containing the object.
+- Prompt engineering can be used to generate images with text prompts.
+    - For instance, you can provide the text prompt "a dragon" to the stable diffusion model to generate an image of a dragon.
+    - You can iterate on that prompt, for instance by adding "realistic Green Dragon" to get a different image of a dragon.
+- You will also learn about inpainting, which is combining image segmentation and a diffusion model to replace parts of an image with a generated image.
+    - For inpainting, your prompt will be both a text prompt (e.g., a realistic Green Dragon) and also an outline of a cat that the dragon will replace.
+- Prompt engineering allows you to combine multiple image models to carry out more complex image transformations.
+    - In the course, you will learn how to combine a segmentation model (S) to cut out an object and a diffusion model (stable diffusion) for generation.
+- You will also learn how to tune model hyperparameters to improve image manipulation.
+    - One such parameter is the guidance scale, which determines how closely the diffusion model follows the text prompt.
+    - A lower guidance scale will allow the model to sample more freely, whereas a higher guidance scale will result in an image that more closely matches the text prompt.
+- You can use a fine-tuning technique called jeam boo to personalize the diffusion model to generate images of specific objects or people.
+
+## 1. Introduction
+- Embedding techniques for text and images - CLIP and ALIGN
+- Prompt wngineering workflows
+- Comet experiment tracking
+    - Data Versioning
+    - Model Architecture
+    - Model Fine-Tuning
+    - Model Versioning 
+    - (Model Evaluation will be visual as evaluation parameter might not tell the full story)
+![course-overview.jpg](images/00-00-course-overview.jpg)
+
+## 3. Image Segmentation
+- Segment Anything Model (SAM) is a universal image segmentation model that can be used for downstream segmentation tasks through positive and negative prompting
+- Image Segmentation - segments am image intyo discrete groups of pixels for different objects
+
+- LAB: Create segmentation or object detection in an image using positive and negative points as input using FastSAM model.
+
+![Image-segmentation.jpg](images/02-01-image-segmentation.jpg)
+
+## 4. Object Detection
+- Object Detection - Create segmentation or object detection in an image using a **text prompt** instead of points as input.
+- LAB pipeline:
+    - Zero shot object detection model (OWL-ViT model - it is a zero shot model that detects bounding bozes with a text prompt)
+    - followed by, MobileSAM model (alternatives FastSam, SAM)
+
+![OWL-ViT.jpg](images/03-01-OWL-ViT.jpg)
+
+## 5. Image Generation
+- Use Stabel Diffusion to perform inpainting using Diffusion Model
 
 
-## 2. Overview
-- Open Scource Models (Apache 2.0 License)
-    - Mistral 7B "open-mistral-7b"
-    - Mixtral 8X7B "open-mixtral-8x7b"
-        - Architecture of a usual LLM: Multi-Head Attention, Feed-Forward Layer (FFN)
-        - Architecture of a MOE: Multi-Head Attention, FFN X 8, Router
-        - Total Parameters 46.7B parameters, at inference it  uses only 12.9B parameter=
-![MOE-architecture](Images/02-01-MOE-architecture.jpg)
+## 6. Fine-Tuning
+- Teach stable diffusion to generate something that it has never seen before by fine-tuning it using DreamBooth and LoRa.
+- DreamBooth
 
-- Commercial Modles: 
-    - Mistral Small "mistral-small-latest": for low latency
-    - Mistral Medium "mistral-medium-latest": for language based task 
-    - Mistral Large "mistral-large-latest": for most sophisticated needs
-        - It is natively fluent in English, French, Spanish, German, and Italian 
-        - 32k Context window
-        - **precise instruction following** enables developers to design their **moderation policies**
-        - Natively capable of function calling
-    - embedding model
-
-- Local Model runs:
-    - transformers
-    - llama.cpp
-    - ollama
-
-- Mistral Links 
-    - Chat Interface [La Chat](chat.mistral.ai)
-    - Mistral API calls [La Plateforme](console.mistral.ai)
-
-
-## 3. Prompting
-- Load API key and helper function for API calls
-- classification prompt with few show 
-    - Seperate instruction, few shot examples, and User Inquiry in seperate sections
-- Spell check on prompt
-- JSON Mode
-    - "return in JSON format" in prompt
-     - few shot examples in JSON format
-     - in API call, "is_json = TRUE"
-- Personalization
-- Summarization
-
-## 4. Model Selection
-- "open-mistral-7b"
-- "open-mixtral-8x7b"
-- "mistral-small-latest"
-    - Simmple classification
-- "mistral-medium-latest"
-    - custom email create
-- "mistral-large-latest"
-    - complex reasoning question
-    - coding task
-    - classification of multiple text
-    - coding question
-
-## 5. Function calling 
-- 4 steps for function calling:
-    1. define tools and user query
-        - a tool could be a function or an external api
-        - a user query comes from the user
-        - (in this step the function and the srgument definition is given in the prompt)
-    2. model generates function name and arguments 
-    3. user executes the function to get the results
-    4. generate final answer
-- Code implementation
-
-![function-calling-steps](Images/04-01-function-calling-steps.jpg)
-
-
-## 6. RAG from scratch 
-- Steps for RAG:
-    1. Load the Documents
-    2. Chunk the documnets
-        - choose the chunk size 
-        - choose ways to split the text 
-    3. Create embeddings for the chunks 
-    4. Save the embeddings in a Vector Database (eg. faiss)
-    5. User asks a question
-    5. Create embedding for the user question 
-    6. Retrive text chunks from the vector database that are close to the user question
-        - seacrh for the text chunks 
-        - select the top k results
-        - (There are a lof of retrieval strategioes, such as, similarity search, BM25, etc.)
-    7. Add the retrieved text chunks and user question to the prompt 
-    8. Generate the response
-
-- We could use RAG logic in a function call
-
-![RAG](Images/06-01-RAG.jpg)
-
-## 7. Chatbot
-- Chat UI package **panel**
-- Chatbots built
-    - basic chat interface 
-    - link of an article and chat with the article
-    - upload a document and chat with the document
-
-## 8. Conclusion
+## 7. Conclusion
